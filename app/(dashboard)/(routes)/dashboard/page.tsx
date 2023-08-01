@@ -33,14 +33,14 @@ const tools = [
     icon: Music,
     color: "text-orange-600",
     bgColor: "bg-orange-600/10",
-    href: "/conversation"
+    href: "/music"
   },
   {
     label: "Code Generator",
     icon: Code,
     color: "text-blue-500",
     bgColor: "bg-blue-500/10",
-    href: "/conversation"
+    href: "/code"
   },
 
 ]
