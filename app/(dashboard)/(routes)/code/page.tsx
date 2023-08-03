@@ -64,8 +64,8 @@ const CodePage = () => {
         title="Code Generation"
         description="Generate code using descriptive text."
         icon={Code}
-        iconColor="text-green-700"
-        bgColor="bg-green-700/10"
+        iconColor="text-blue-700"
+        bgColor="bg-blue-700/10"
       />
       <div className="px-4 lg:px-8">
         <div>
@@ -100,7 +100,7 @@ const CodePage = () => {
                   </FormItem>
                 )}
               />
-              <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
+              <Button className="col-span-12 lg:col-span-2 w-full bg-black hover:bg-black/80" type="submit" disabled={isLoading} size="icon">
                 Generate
               </Button>
             </form>

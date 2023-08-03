@@ -59,8 +59,8 @@ const MusicPage = () => {
         title="Music Generation"
         description="Turn your prompt into music."
         icon={Music}
-        iconColor="text-emerald-500"
-        bgColor="bg-emerald-500/10"
+        iconColor="text-orange-500"
+        bgColor="bg-orange-500/10"
       />
       <div className="px-4 lg:px-8">
         <Form {...form}>
@@ -94,7 +94,7 @@ const MusicPage = () => {
                 </FormItem>
               )}
             />
-            <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
+            <Button className="col-span-12 lg:col-span-2 w-full bg-black hover:bg-black/80" type="submit" disabled={isLoading} size="icon">
               Generate
             </Button>
           </form>
