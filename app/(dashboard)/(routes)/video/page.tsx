@@ -6,7 +6,7 @@ import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 // import { toast } from "react-hot-toast";
-import { FileAudio } from "lucide-react";
+import { FileAudio, VideoIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import Heading from "@/components/heading";
@@ -55,9 +55,9 @@ const VideoPage = () => {
   return ( 
     <div>
       <Heading
-        title="Video Generation"
+        title="Video Generator"
         description="Turn your prompt into video."
-        icon={FileAudio}
+        icon={VideoIcon}
         iconColor="text-green-600"
         bgColor="bg-green-700/10"
       />
@@ -86,7 +86,7 @@ const VideoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading} 
-                      placeholder="Clown fish swimming in a coral reef" 
+                      placeholder="A bird Flying in the sky.." 
                       {...field}
                     />
                   </FormControl>

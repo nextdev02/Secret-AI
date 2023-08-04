@@ -61,7 +61,7 @@ const CodePage = () => {
   return ( 
     <div>
       <Heading
-        title="Code Generation"
+        title="Code Generator"
         description="Generate code using descriptive text."
         icon={Code}
         iconColor="text-blue-700"
@@ -93,7 +93,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading} 
-                        placeholder="Simple toggle button using react hooks." 
+                        placeholder="Make me a log in page using html css Javascript." 
                         {...field}
                       />
                     </FormControl>
@@ -120,14 +120,14 @@ const CodePage = () => {
               <div 
                 key={message.content} 
                 className={cn(
-                  "p-8 w-full flex items-start gap-x-8 rounded-lg",
+                  "p-4 w-full flex items-start gap-x-2 rounded-lg",
                   message.role === "user" ? "bg-white border border-black/10" : "bg-muted",
                 )}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
                 <ReactMarkdown components={{
                   pre: ({ node, ...props }) => (
-                    <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                    <div className="overflow-auto w-full my-2 bg-black text-white p-2 rounded-lg">
                       <pre {...props} />
                     </div>
                   ),
