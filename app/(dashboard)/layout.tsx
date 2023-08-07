@@ -7,7 +7,7 @@ const DashboardLayout = ({
     children: React.ReactNode;
 }) => {
   return (
-    <div className="h-full relative">
+    <div className="h-full relative bg-[#ffffff]">
       <div className="
         hidden
         h-full
@@ -24,7 +24,7 @@ const DashboardLayout = ({
 
       </div>
 
-      <main className="md:pl-72">
+      <main className="md:pl-72 ">
 
         <Navbar />
         {children}
